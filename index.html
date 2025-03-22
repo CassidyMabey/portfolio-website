@@ -3,115 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grey Website</title>
+    <title>Cassidy Mabey | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="bg-overlay"></div>
     <div class="container">
-        <!-- Header -->
-        <header>
+        <header class="sticky-header">
             <div class="header-content">
-                <h1>Grey Website</h1>
+                <div class="profile-image">
+                    <img src="./assets/pfp.jpeg" alt="Cassidy Mabey">
+                </div>
                 
-                <!-- Navigation -->
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         
-        <!-- Main Content -->
         <main>
-            <!-- Hero Section -->
             <div class="hero">
-                <h2>Welcome to our Website</h2>
-                <p>This is a simple website with a grey color scheme that can be hosted on GitHub Pages.</p>
+                <h2>hi, i am Cassidy</h2>
+                <p>Programmer & Computer Engineer</p>
+                <div class="social-links">
+                    <a href="https://github.com/CassidyMabey" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/cassidy-mabey-712b83356" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
             </div>
             
-            <!-- Features Section -->
-            <div class="section-title">
-                <h2>Our Features</h2>
+            <div id="portfolio" class="section-title">
+                <h2>My Work</h2>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item portfolio-item">
+                    <h3>Training a neural network for face detection</h3>
+                    <p>A project where I created my own face detecting neural network and used it to blur real-time video from your camera.</p>
+                    <button onclick=" window.open('https://github.com/CassidyMabey/face-blur-tracking','_blank')" class="btn">
+                        View Project
+                    </button>
+                </div>
+                <div class="grid-item portfolio-item">
+                    <h3>Project Two</h3>
+                    <p>An interactive dashboard for data visualization using D3.js.</p>
+                    <button class="btn">View Project</button>
+                </div>
+                <div class="grid-item portfolio-item">
+                    <h3>Project Three</h3>
+                    <p>A mobile-friendly portfolio template for photographers.</p>
+                    <button class="btn">View Project</button>
+                </div>
+                <div class="grid-item portfolio-item">
+                    <h3>Project Four</h3>
+                    <p>A real-time chat application with WebSockets.</p>
+                    <button class="btn">View Project</button>
+                </div>
+            </div>
+            
+            <div id="about" class="section-title">
+                <h2>About Me</h2>
             </div>
             <div class="grid-container">
                 <div class="grid-item">
-                    <h3>Feature One</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                    <h3>My Background</h3>
+                    <p>I'm a passionate web developer and designer focused on creating beautiful, functional websites and applications.</p>
                 </div>
                 <div class="grid-item">
-                    <h3>Feature Two</h3>
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                </div>
-                <div class="grid-item">
-                    <h3>Feature Three</h3>
-                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-                </div>
-                <div class="grid-item">
-                    <h3>Feature Four</h3>
-                    <p>Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus.</p>
+                    <h3>My Skills</h3>
+                    <p>HTML, CSS, JavaScript, React, Node.js, UI/UX Design, Responsive Web Development</p>
                 </div>
             </div>
             
-            <!-- Content Section -->
-            <div class="section-title">
-                <h2>About Us</h2>
-            </div>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <h3>Our Mission</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-                    <button class="btn">Learn More</button>
-                </div>
-                <div class="grid-item">
-                    <h3>Our Team</h3>
-                    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur.</p>
-                    <button class="btn">Meet the Team</button>
-                </div>
-            </div>
-            
-            <!-- Testimonials -->
             <div class="testimonials">
-                <h3>What Our Clients Say</h3>
+                <h3>What Clients Say</h3>
                 <div class="grid-container">
                     <div class="testimonial-item">
-                        <p>"This company exceeded all my expectations. Highly recommended!"</p>
-                        <p class="author">- Jane Doe</p>
+                        <p>"Cassidy delivered our project on time and exceeded our expectations with her attention to detail."</p>
+                        <p class="author">- Jane Doe, Tech Startup</p>
                     </div>
                     <div class="testimonial-item">
-                        <p>"The best service I've experienced in years. Will definitely use again."</p>
-                        <p class="author">- John Smith</p>
+                        <p>"Working with Cassidy was a pleasure. Her technical skills and communication made the process seamless."</p>
+                        <p class="author">- John Smith, Digital Agency</p>
                     </div>
                 </div>
             </div>
             
-            <!-- Additional Content -->
-            <div class="section-title">
-                <h2>Why Choose Us</h2>
+            <div id="contact" class="section-title">
+                <h2>Get In Touch</h2>
             </div>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <h3>Our Process</h3>
-                    <p>Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+            <div class="contact-section">
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                <div class="email-container">
+                    <i class="fas fa-envelope email-icon"></i>
+                    <p class="email" id="email-text">cassidymabey@gmail.com</p>
+                    <button id="copy-email" class="copy-btn"><i class="fas fa-copy"></i></button>
                 </div>
-                <div class="grid-item">
-                    <h3>Our Guarantee</h3>
-                    <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                <div class="social-links-large">
+                    <a href="https://github.com/CassidyMabey" target="_blank" class="social-icon no-underline">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/cassidy-mabey-712b83356" target="_blank" class="social-icon no-underline">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
                 </div>
+            </div>
+            
+            <div id="notification" class="notification">
+                <span id="notification-message">Email copied to clipboard!</span>
+                <button id="close-notification" class="close-btn">×</button>
             </div>
         </main>
         
-        <!-- Footer -->
         <footer>
-            <p>&copy; 2025 Grey Website. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Contact Us</a>
-            </div>
+            <p>&copy; 2025 Cassidy Mabey. All rights reserved.</p>
         </footer>
     </div>
 
